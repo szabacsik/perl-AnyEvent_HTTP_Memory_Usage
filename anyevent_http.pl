@@ -81,23 +81,29 @@ sub request
 
 =pod
 
-https://login.windows.net ... 10000x ( auth ok )
+https://login.windows.net ...   10.000x ( auth ok )
 
   time    vsz (  diff)    rss (  diff) shared (  diff)   code (  diff)   data (  diff)
      0  46488 ( 46488)  13508 ( 13508)   5920 (  5920)      8 (     8)   7692 (  7692) started
   1582  46528 (    40)  13768 (   260)   6108 (   188)      8 (     0)   7732 (    40) finished
 
-https://login.windows.net ... 10000x ( auth failed )
+https://login.windows.net ...   10.000x ( auth failed )
 
   time    vsz (  diff)    rss (  diff) shared (  diff)   code (  diff)   data (  diff)
      0  46456 ( 46456)  13552 ( 13552)   5968 (  5968)      8 (     8)   7660 (  7660) started
   1339  46528 (    72)  13748 (   196)   6096 (   128)      8 (     0)   7732 (    72) finished
 
-https://login.windows.net .. 100000x, ( auth ok )
+https://login.windows.net ..   100.000x, ( auth ok )
 
   time    vsz (  diff)    rss (  diff) shared (  diff)   code (  diff)   data (  diff)
      0  46456 ( 46456)  13584 ( 13584)   6000 (  6000)      8 (     8)   7660 (  7660) started
  15739  46528 (    72)  13848 (   264)   6192 (   192)      8 (     0)   7732 (    72) finished
+
+https://login.windows.net ... 1.000.000x ( auth ok )
+
+time    vsz (  diff)    rss (  diff) shared (  diff)   code (  diff)   data (  diff)
+     0  46456 ( 46456)  13560 ( 13560)   5980 (  5980)      8 (     8)   7660 (  7660) started
+164402  46528 (    72)  13740 (   180)   6108 (   128)      8 (     0)   7732 (    72) finished
 
 http://google.com 10000x
 
